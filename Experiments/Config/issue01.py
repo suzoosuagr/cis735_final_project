@@ -30,12 +30,12 @@ class EXP1(Basic_Config):
         self.lr = 1e-3
         self.optim = 'Adam'
         self.weight_decay = 5e-5
-        self.batch = 256
-        self.eval_freq = 3
+        self.batch = 1024
+        self.eval_freq = 1
         self.epochs = 200
         self.patience = 10
         self.alpha = 0.4
-        self.num_workers = 0
-        self.pin_memory = False
+        self.num_workers = 16
+        self.pin_memory = True
 
         
