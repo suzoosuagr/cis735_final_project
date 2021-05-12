@@ -36,7 +36,7 @@ class RevSiamese_resnet34(nn.Module):
         backbone = models.resnet34(pretrained)
         self.features = nn.Sequential(*list(backbone.children())[:-1])
         fc_in_dim = list(backbone.children())[-1].in_features
-        self.classifier = MLP_Classifier(fc_in_dim, nclass)
+        self.classifier = nn.Linear(fc_in_dim, nclass)
 
     def forward(self, img_0, img_1, alpha):
         if alpha is None:
@@ -46,11 +46,9 @@ class RevSiamese_resnet34(nn.Module):
         feat_1 = self.features(img_1).squeeze(2).squeeze(2)
 
         class_output = self.classifier(feat_0)
-        sia_feat = torch.cat([feat_0, feat_1], dim=-1)
-        reverse_feat = ReverseLayerF.apply(sia_feat, alpha)
+        # reverse_feat0 = ReverseLayerF.apply(sia_feat, alpha)
 
-        sia_output = self.siamese(reverse_feat)
-        return class_output, sia_output
+        return class_output, feat_0, feat_1
 
     def cls_forward(self, img_0):
         feat_0 = self.features(img_0).squeeze(2).squeeze(2)

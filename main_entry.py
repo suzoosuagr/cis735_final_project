@@ -6,12 +6,12 @@ from Dataset import StateFarm
 from torch.utils.data import DataLoader
 from torchvision import transforms as T
 import skimage.io as io
-from Model.models import DANN_resnet34
+from Model.models import DANN_resnet34, RevSiamese_resnet34
 import torch.nn as nn
 import torch.optim as optim
 from Tools.metric import Accu
-from Tools.engine import DA_Engine
-
+from Tools.engine import DA_Engine, Siamese_Engine
+from Model.networks import Rev_ContrastiveLoss
 
 def parse_args():
     parser = argparse.ArgumentParser()
@@ -22,7 +22,7 @@ def parse_args():
 
 # initialization
 parser = parse_args()
-args = EXP1(parser.mode, parser.logfile)
+args = EXP2(parser.mode, parser.logfile)
 warning("STARTING >>>>>> {} ".format(args.name))
 args.logpath = os.path.join(args.log_root, args.name, args.logfile)
 ngpu, device, writer = env_init(args, logging.INFO)
@@ -59,6 +59,8 @@ if args.mode == 'debug':
     args.pin_memory=False
     args.num_workers=0
     args.batch = 8
+    args.resume = False
+    args.summary = False
 
 train_loader = DataLoader(  train_dataset, batch_size=args.batch, shuffle=True, \
                             drop_last=False, num_workers=args.num_workers, pin_memory=args.pin_memory)
@@ -67,19 +69,30 @@ eval_loader = DataLoader(   eval_dataset, batch_size=args.batch, shuffle=False, 
 
                 
 # model
-model = DANN_resnet34(args.nclass, True).to(device)
+if args.method == 'DA':
+    model = DANN_resnet34(args.nclass, True).to(device)
+elif args.method == 'RevSiamese':
+    model = RevSiamese_resnet34(args.nclass, True).to(device)
 model = nn.DataParallel(model, device_ids=range(args.ngpu))
 # optimizer
 optimizer = optim.Adam(model.parameters(), lr=args.lr, weight_decay=args.weight_decay)
 # metric
-criterion = nn.CrossEntropyLoss()
+if args.method == 'DA':
+    criterion = nn.CrossEntropyLoss()
+elif args.method == 'RevSiamese':
+    criterion = {
+        'rev_sia': Rev_ContrastiveLoss(margin=args.margin),
+        'cls': nn.CrossEntropyLoss()
+    }
 metric = Accu()
 # engine
-engine = DA_Engine(train_loader, eval_loader, None, args, writer, device)
+engine = Siamese_Engine(train_loader, eval_loader, None, args, writer, device)
 
 # random seed
 if __name__ == '__main__':
     if args.mode in ['train', 'debug']:
+        info("Margin = {}".format(args.margin))
         engine.train(model, optimizer, criterion, metric)
+        
     else:
         raise NotImplementedError

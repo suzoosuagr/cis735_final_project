@@ -71,6 +71,7 @@ class BaseEngine():
         self.scheduler = optim.lr_scheduler.ReduceLROnPlateau(  self.optimizer, 
                                                                 'min',
                                                                 patience=self.args.patience,
+                                                                min_lr=1e-5
                                                                 )
         # EPOCH LOOP
         for epoch in range(self.args.epochs):

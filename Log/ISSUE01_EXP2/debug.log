@@ -1,0 +1,22 @@
+[2021-05-12 03:42:34,967] INFO    (__init__-24): DEVICE: cuda, found 1 gpus: ['0']
+[2021-05-12 03:42:35,000] INFO    (main_entry-53): 18943 samples for training --- 3481 samples for validation
+[2021-05-12 03:42:53,967] INFO    (base_engine-64): Train >>> ISSUE01_EXP2
+[2021-05-12 03:42:53,975] INFO    (base_engine-78): Epc: 0/200, val_loss:100000000.0
+[2021-05-12 03:43:40,750] INFO    (__init__-24): DEVICE: cuda, found 1 gpus: ['0']
+[2021-05-12 03:43:40,806] INFO    (main_entry-53): 18943 samples for training --- 3481 samples for validation
+[2021-05-12 03:43:47,289] INFO    (base_engine-64): Train >>> ISSUE01_EXP2
+[2021-05-12 03:43:47,295] INFO    (base_engine-78): Epc: 0/200, val_loss:100000000.0
+[2021-05-12 03:44:21,088] INFO    (__init__-24): DEVICE: cuda, found 1 gpus: ['0']
+[2021-05-12 03:44:21,143] INFO    (main_entry-53): 18943 samples for training --- 3481 samples for validation
+[2021-05-12 03:44:25,690] INFO    (base_engine-64): Train >>> ISSUE01_EXP2
+[2021-05-12 03:44:25,698] INFO    (base_engine-78): Epc: 0/200, val_loss:100000000.0
+[2021-05-12 03:47:49,620] INFO    (__init__-24): DEVICE: cuda, found 1 gpus: ['0']
+[2021-05-12 03:47:49,674] INFO    (main_entry-53): 18943 samples for training --- 3481 samples for validation
+[2021-05-12 03:47:51,561] INFO    (main_entry-94): Margin = 10.0
+[2021-05-12 03:47:53,263] INFO    (base_engine-64): Train >>> ISSUE01_EXP2
+[2021-05-12 03:47:53,270] INFO    (base_engine-78): Epc: 0/200, val_loss:100000000.0
+[2021-05-12 03:48:45,269] INFO    (__init__-24): DEVICE: cuda, found 1 gpus: ['0']
+[2021-05-12 03:48:45,324] INFO    (main_entry-53): 18943 samples for training --- 3481 samples for validation
+[2021-05-12 03:48:47,197] INFO    (main_entry-94): Margin = 10.0
+[2021-05-12 03:48:49,568] INFO    (base_engine-64): Train >>> ISSUE01_EXP2
+[2021-05-12 03:48:49,576] INFO    (base_engine-78): Epc: 0/200, val_loss:100000000.0
