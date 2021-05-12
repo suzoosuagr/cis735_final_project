@@ -22,7 +22,7 @@ class EXP1(Basic_Config):
         self.ins_val_file = './Dataset/instruction/statefarm_val.txt' 
         self.img_size = 224
 
-        self.summary = False
+        self.summary = True
         self.resume = False
 
         self.backbone = 'res34'
@@ -30,7 +30,7 @@ class EXP1(Basic_Config):
         self.lr = 1e-3
         self.optim = 'Adam'
         self.weight_decay = 5e-5
-        self.batch = 1024
+        self.batch = 512
         self.eval_freq = 1
         self.epochs = 200
         self.patience = 10

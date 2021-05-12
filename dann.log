@@ -69,3 +69,60 @@
 009 (1134491.000.000) 05/03 13:10:15 Job was aborted by the user.
 	via condor_rm (by user jwang127)
 ...
+000 (1134852.000.000) 05/11 01:41:00 Job submitted from host: <10.5.0.91:9618?addrs=10.5.0.91-9618&noUDP&sock=1749_3f3b_42>
+...
+009 (1134852.000.000) 05/11 03:02:45 Job was aborted by the user.
+	via condor_rm (by user jwang127)
+...
+000 (1134858.000.000) 05/11 03:03:26 Job submitted from host: <10.5.0.91:9618?addrs=10.5.0.91-9618&noUDP&sock=1749_3f3b_42>
+...
+009 (1134858.000.000) 05/11 21:17:03 Job was aborted by the user.
+	via condor_rm (by user jwang127)
+...
+000 (1134939.000.000) 05/11 21:17:27 Job submitted from host: <10.5.0.91:9618?addrs=10.5.0.91-9618&noUDP&sock=1749_3f3b_42>
+...
+001 (1134939.000.000) 05/11 21:18:26 Job executing on host: <10.5.46.5:9618?addrs=10.5.46.5-9618&noUDP&sock=1913_0d2b_3>
+...
+006 (1134939.000.000) 05/11 21:18:34 Image size of job updated: 346956
+	219  -  MemoryUsage of job (MB)
+	224204  -  ResidentSetSize of job (KB)
+...
+006 (1134939.000.000) 05/11 21:23:34 Image size of job updated: 22553888
+	5367  -  MemoryUsage of job (MB)
+	5495736  -  ResidentSetSize of job (KB)
+...
+006 (1134939.000.000) 05/11 21:28:34 Image size of job updated: 27316300
+	9236  -  MemoryUsage of job (MB)
+	9457164  -  ResidentSetSize of job (KB)
+...
+006 (1134939.000.000) 05/11 21:33:35 Image size of job updated: 27401696
+	9319  -  MemoryUsage of job (MB)
+	9542560  -  ResidentSetSize of job (KB)
+...
+006 (1134939.000.000) 05/11 21:53:37 Image size of job updated: 27914988
+	9821  -  MemoryUsage of job (MB)
+	10056016  -  ResidentSetSize of job (KB)
+...
+006 (1134939.000.000) 05/11 21:58:37 Image size of job updated: 30075628
+	11931  -  MemoryUsage of job (MB)
+	12216492  -  ResidentSetSize of job (KB)
+...
+006 (1134939.000.000) 05/11 22:28:41 Image size of job updated: 30174324
+	12027  -  MemoryUsage of job (MB)
+	12315188  -  ResidentSetSize of job (KB)
+...
+004 (1134939.000.000) 05/11 23:27:50 Job was evicted.
+	(0) Job was not checkpointed.
+		Usr 0 15:14:10, Sys 0 01:59:13  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated Assigned
+	   Cpus                 :     5.16        1         1 
+	   Disk (KB)            :     1           1    180202 
+	   Gpus                 :                           2 "CUDA0,CUDA1"
+	   Memory (MB)          : 12027           1       128 
+...
+009 (1134939.000.000) 05/11 23:27:50 Job was aborted by the user.
+	via condor_rm (by user jwang127)
+...
