@@ -47,3 +47,17 @@ class Rev_ContrastiveLoss(nn.Module):
         loss_contrastive = torch.mean((label)*torch.pow(eucli_distance, 2)+\
                                         (1-label)*torch.pow(torch.clamp(self.margin - eucli_distance, min=0.0), 2))
         return loss_contrastive
+
+class ContrastiveLoss(nn.Module):
+    """
+        Reverse Contrastive Loss function for siamese neural networks
+    """
+    def __init__(self, margin=2.0) -> None:
+        super(ContrastiveLoss, self).__init__() 
+        self.margin = margin
+
+    def forward(self, out1, out2, label):
+        eucli_distance = F.pairwise_distance(out1, out2, keepdim=True)
+        loss_contrastive = torch.mean((1-label)*torch.pow(eucli_distance, 2)+\
+                                        (label)*torch.pow(torch.clamp(self.margin - eucli_distance, min=0.0), 2))
+        return loss_contrastive

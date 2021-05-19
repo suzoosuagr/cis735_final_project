@@ -126,3 +126,99 @@
 009 (1134939.000.000) 05/11 23:27:50 Job was aborted by the user.
 	via condor_rm (by user jwang127)
 ...
+000 (1134962.000.000) 05/12 03:51:43 Job submitted from host: <10.5.0.91:9618?addrs=10.5.0.91-9618&noUDP&sock=1749_3f3b_42>
+...
+001 (1134962.000.000) 05/12 14:40:18 Job executing on host: <10.5.70.2:9618?addrs=10.5.70.2-9618&noUDP&sock=2113_8c84_3>
+...
+006 (1134962.000.000) 05/12 14:40:27 Image size of job updated: 406388
+	267  -  MemoryUsage of job (MB)
+	273016  -  ResidentSetSize of job (KB)
+...
+006 (1134962.000.000) 05/12 14:45:28 Image size of job updated: 41577936
+	21398  -  MemoryUsage of job (MB)
+	21910700  -  ResidentSetSize of job (KB)
+...
+006 (1134962.000.000) 05/12 15:10:30 Image size of job updated: 41628304
+	21447  -  MemoryUsage of job (MB)
+	21961068  -  ResidentSetSize of job (KB)
+...
+006 (1134962.000.000) 05/12 15:50:33 Image size of job updated: 41638820
+	21457  -  MemoryUsage of job (MB)
+	21971556  -  ResidentSetSize of job (KB)
+...
+006 (1134962.000.000) 05/12 16:25:36 Image size of job updated: 41783640
+	21598  -  MemoryUsage of job (MB)
+	22116352  -  ResidentSetSize of job (KB)
+...
+006 (1134962.000.000) 05/12 16:50:39 Image size of job updated: 42233032
+	21763  -  MemoryUsage of job (MB)
+	22285132  -  ResidentSetSize of job (KB)
+...
+006 (1134962.000.000) 05/12 18:20:48 Image size of job updated: 44863784
+	21763  -  MemoryUsage of job (MB)
+	22285132  -  ResidentSetSize of job (KB)
+...
+005 (1134962.000.000) 05/12 18:38:22 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 1 05:06:43, Sys 0 04:01:26  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 1 05:06:43, Sys 0 04:01:26  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated Assigned
+	   Cpus                 :     6.72        1         1 
+	   Disk (KB)            :     1           1    180283 
+	   Gpus                 :                           2 "CUDA1,CUDA2"
+	   Memory (MB)          : 21763           1       128 
+...
+000 (1135614.000.000) 05/13 21:16:26 Job submitted from host: <10.5.0.91:9618?addrs=10.5.0.91-9618&noUDP&sock=1749_3f3b_42>
+...
+001 (1135614.000.000) 05/13 21:17:06 Job executing on host: <10.5.70.2:9618?addrs=10.5.70.2-9618&noUDP&sock=2113_8c84_3>
+...
+006 (1135614.000.000) 05/13 21:17:14 Image size of job updated: 1099980
+	861  -  MemoryUsage of job (MB)
+	880804  -  ResidentSetSize of job (KB)
+...
+006 (1135614.000.000) 05/13 21:22:14 Image size of job updated: 42620976
+	21241  -  MemoryUsage of job (MB)
+	21749824  -  ResidentSetSize of job (KB)
+...
+006 (1135614.000.000) 05/13 21:27:14 Image size of job updated: 42740592
+	21357  -  MemoryUsage of job (MB)
+	21869440  -  ResidentSetSize of job (KB)
+...
+006 (1135614.000.000) 05/13 21:52:17 Image size of job updated: 43011284
+	21357  -  MemoryUsage of job (MB)
+	21869440  -  ResidentSetSize of job (KB)
+...
+006 (1135614.000.000) 05/13 21:57:17 Image size of job updated: 43011284
+	21369  -  MemoryUsage of job (MB)
+	21881196  -  ResidentSetSize of job (KB)
+...
+006 (1135614.000.000) 05/13 22:17:19 Image size of job updated: 43074448
+	21397  -  MemoryUsage of job (MB)
+	21909684  -  ResidentSetSize of job (KB)
+...
+006 (1135614.000.000) 05/13 22:27:21 Image size of job updated: 43074448
+	21399  -  MemoryUsage of job (MB)
+	21911592  -  ResidentSetSize of job (KB)
+...
+005 (1135614.000.000) 05/13 23:18:13 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 14:09:43, Sys 0 02:08:22  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 14:09:43, Sys 0 02:08:22  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated Assigned
+	   Cpus                 :    15.48        1         1 
+	   Disk (KB)            :     1           1    180283 
+	   Gpus                 :                           2 "CUDA0,CUDA1"
+	   Memory (MB)          : 21399           1       128 
+...

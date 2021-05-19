@@ -11,7 +11,7 @@ import torch.nn as nn
 import torch.optim as optim
 from Tools.metric import Accu
 from Tools.engine import DA_Engine, Siamese_Engine
-from Model.networks import Rev_ContrastiveLoss
+from Model.networks import Rev_ContrastiveLoss, ContrastiveLoss
 
 def parse_args():
     parser = argparse.ArgumentParser()
@@ -22,7 +22,7 @@ def parse_args():
 
 # initialization
 parser = parse_args()
-args = EXP2(parser.mode, parser.logfile)
+args = EXP3(parser.mode, parser.logfile)
 warning("STARTING >>>>>> {} ".format(args.name))
 args.logpath = os.path.join(args.log_root, args.name, args.logfile)
 ngpu, device, writer = env_init(args, logging.INFO)
@@ -71,7 +71,7 @@ eval_loader = DataLoader(   eval_dataset, batch_size=args.batch, shuffle=False, 
 # model
 if args.method == 'DA':
     model = DANN_resnet34(args.nclass, True).to(device)
-elif args.method == 'RevSiamese':
+elif args.method in ['RevSiamese', 'Siamese']:
     model = RevSiamese_resnet34(args.nclass, True).to(device)
 model = nn.DataParallel(model, device_ids=range(args.ngpu))
 # optimizer
@@ -83,6 +83,11 @@ elif args.method == 'RevSiamese':
     criterion = {
         'rev_sia': Rev_ContrastiveLoss(margin=args.margin),
         'cls': nn.CrossEntropyLoss()
+    }
+elif args.method == 'Siamese':
+    criterion = {
+        'rev_sia': ContrastiveLoss(margin=args.margin),
+        'cls':nn.CrossEntropyLoss()
     }
 metric = Accu()
 # engine

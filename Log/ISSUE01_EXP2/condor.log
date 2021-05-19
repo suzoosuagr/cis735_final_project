@@ -1,0 +1,408 @@
+[2021-05-12 14:40:23,465] INFO    (__init__-24): DEVICE: cuda, found 2 gpus: ['1', '2']
+[2021-05-12 14:40:23,474] INFO    (__init__-37): tfboard writer created. 
+[2021-05-12 14:40:23,523] INFO    (main_entry-53): 18943 samples for training --- 3481 samples for validation
+[2021-05-12 14:40:41,031] INFO    (main_entry-94): Margin = 10.0
+[2021-05-12 14:40:41,034] INFO    (base_engine-64): Train >>> ISSUE01_EXP2
+[2021-05-12 14:40:41,034] INFO    (base_engine-78): Epc: 0/200, val_loss:100000000.0
+[2021-05-12 14:42:09,697] INFO    (base_engine-99): New min Val loss 1.3487 at [000]: Val_Accu:0.60
+[2021-05-12 14:42:14,758] INFO    (base_engine-102): current lr_rate is [0.001]
+[2021-05-12 14:42:14,759] INFO    (base_engine-78): Epc: 1/200, val_loss:1.3486852986471993
+[2021-05-12 14:43:25,083] INFO    (base_engine-99): New min Val loss 0.8619 at [001]: Val_Accu:0.69
+[2021-05-12 14:43:30,291] INFO    (base_engine-102): current lr_rate is [0.001]
+[2021-05-12 14:43:30,293] INFO    (base_engine-78): Epc: 2/200, val_loss:0.8618764621870858
+[2021-05-12 14:44:42,308] INFO    (base_engine-102): current lr_rate is [0.001]
+[2021-05-12 14:44:42,310] INFO    (base_engine-78): Epc: 3/200, val_loss:0.8618764621870858
+[2021-05-12 14:45:54,356] INFO    (base_engine-99): New min Val loss 0.4971 at [003]: Val_Accu:0.74
+[2021-05-12 14:45:59,565] INFO    (base_engine-102): current lr_rate is [0.001]
+[2021-05-12 14:45:59,567] INFO    (base_engine-78): Epc: 4/200, val_loss:0.49710611147539957
+[2021-05-12 14:47:07,848] INFO    (base_engine-102): current lr_rate is [0.001]
+[2021-05-12 14:47:07,850] INFO    (base_engine-78): Epc: 5/200, val_loss:0.49710611147539957
+[2021-05-12 14:48:17,743] INFO    (base_engine-102): current lr_rate is [0.001]
+[2021-05-12 14:48:17,745] INFO    (base_engine-78): Epc: 6/200, val_loss:0.49710611147539957
+[2021-05-12 14:49:28,227] INFO    (base_engine-102): current lr_rate is [0.001]
+[2021-05-12 14:49:28,228] INFO    (base_engine-78): Epc: 7/200, val_loss:0.49710611147539957
+[2021-05-12 14:50:39,555] INFO    (base_engine-102): current lr_rate is [0.001]
+[2021-05-12 14:50:39,557] INFO    (base_engine-78): Epc: 8/200, val_loss:0.49710611147539957
+[2021-05-12 14:51:48,811] INFO    (base_engine-102): current lr_rate is [0.001]
+[2021-05-12 14:51:48,812] INFO    (base_engine-78): Epc: 9/200, val_loss:0.49710611147539957
+[2021-05-12 14:52:59,816] INFO    (base_engine-102): current lr_rate is [0.001]
+[2021-05-12 14:52:59,818] INFO    (base_engine-78): Epc: 10/200, val_loss:0.49710611147539957
+[2021-05-12 14:54:11,214] INFO    (base_engine-102): current lr_rate is [0.001]
+[2021-05-12 14:54:11,215] INFO    (base_engine-78): Epc: 11/200, val_loss:0.49710611147539957
+[2021-05-12 14:55:22,361] INFO    (base_engine-102): current lr_rate is [0.001]
+[2021-05-12 14:55:22,363] INFO    (base_engine-78): Epc: 12/200, val_loss:0.49710611147539957
+[2021-05-12 14:56:32,534] INFO    (base_engine-102): current lr_rate is [0.001]
+[2021-05-12 14:56:32,536] INFO    (base_engine-78): Epc: 13/200, val_loss:0.49710611147539957
+[2021-05-12 14:57:43,521] INFO    (base_engine-102): current lr_rate is [0.001]
+[2021-05-12 14:57:43,523] INFO    (base_engine-78): Epc: 14/200, val_loss:0.49710611147539957
+[2021-05-12 14:58:54,564] INFO    (base_engine-102): current lr_rate is [0.0001]
+[2021-05-12 14:58:54,565] INFO    (base_engine-78): Epc: 15/200, val_loss:0.49710611147539957
+[2021-05-12 15:00:06,030] INFO    (base_engine-102): current lr_rate is [0.0001]
+[2021-05-12 15:00:06,032] INFO    (base_engine-78): Epc: 16/200, val_loss:0.49710611147539957
+[2021-05-12 15:01:18,265] INFO    (base_engine-102): current lr_rate is [0.0001]
+[2021-05-12 15:01:18,269] INFO    (base_engine-78): Epc: 17/200, val_loss:0.49710611147539957
+[2021-05-12 15:02:28,643] INFO    (base_engine-102): current lr_rate is [0.0001]
+[2021-05-12 15:02:28,644] INFO    (base_engine-78): Epc: 18/200, val_loss:0.49710611147539957
+[2021-05-12 15:03:38,583] INFO    (base_engine-102): current lr_rate is [0.0001]
+[2021-05-12 15:03:38,585] INFO    (base_engine-78): Epc: 19/200, val_loss:0.49710611147539957
+[2021-05-12 15:04:49,240] INFO    (base_engine-102): current lr_rate is [0.0001]
+[2021-05-12 15:04:49,242] INFO    (base_engine-78): Epc: 20/200, val_loss:0.49710611147539957
+[2021-05-12 15:05:59,761] INFO    (base_engine-102): current lr_rate is [0.0001]
+[2021-05-12 15:05:59,763] INFO    (base_engine-78): Epc: 21/200, val_loss:0.49710611147539957
+[2021-05-12 15:07:11,295] INFO    (base_engine-102): current lr_rate is [0.0001]
+[2021-05-12 15:07:11,297] INFO    (base_engine-78): Epc: 22/200, val_loss:0.49710611147539957
+[2021-05-12 15:08:23,301] INFO    (base_engine-102): current lr_rate is [0.0001]
+[2021-05-12 15:08:23,303] INFO    (base_engine-78): Epc: 23/200, val_loss:0.49710611147539957
+[2021-05-12 15:09:35,180] INFO    (base_engine-102): current lr_rate is [0.0001]
+[2021-05-12 15:09:35,181] INFO    (base_engine-78): Epc: 24/200, val_loss:0.49710611147539957
+[2021-05-12 15:10:46,434] INFO    (base_engine-102): current lr_rate is [0.0001]
+[2021-05-12 15:10:46,436] INFO    (base_engine-78): Epc: 25/200, val_loss:0.49710611147539957
+[2021-05-12 15:11:56,965] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 15:11:56,967] INFO    (base_engine-78): Epc: 26/200, val_loss:0.49710611147539957
+[2021-05-12 15:13:05,627] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 15:13:05,629] INFO    (base_engine-78): Epc: 27/200, val_loss:0.49710611147539957
+[2021-05-12 15:14:15,297] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 15:14:15,299] INFO    (base_engine-78): Epc: 28/200, val_loss:0.49710611147539957
+[2021-05-12 15:15:27,080] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 15:15:27,081] INFO    (base_engine-78): Epc: 29/200, val_loss:0.49710611147539957
+[2021-05-12 15:16:38,728] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 15:16:38,730] INFO    (base_engine-78): Epc: 30/200, val_loss:0.49710611147539957
+[2021-05-12 15:17:49,948] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 15:17:49,949] INFO    (base_engine-78): Epc: 31/200, val_loss:0.49710611147539957
+[2021-05-12 15:19:01,019] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 15:19:01,020] INFO    (base_engine-78): Epc: 32/200, val_loss:0.49710611147539957
+[2021-05-12 15:20:11,943] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 15:20:11,945] INFO    (base_engine-78): Epc: 33/200, val_loss:0.49710611147539957
+[2021-05-12 15:21:21,587] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 15:21:21,589] INFO    (base_engine-78): Epc: 34/200, val_loss:0.49710611147539957
+[2021-05-12 15:22:33,283] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 15:22:33,285] INFO    (base_engine-78): Epc: 35/200, val_loss:0.49710611147539957
+[2021-05-12 15:23:44,464] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 15:23:44,465] INFO    (base_engine-78): Epc: 36/200, val_loss:0.49710611147539957
+[2021-05-12 15:24:53,731] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 15:24:53,733] INFO    (base_engine-78): Epc: 37/200, val_loss:0.49710611147539957
+[2021-05-12 15:26:03,903] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 15:26:03,905] INFO    (base_engine-78): Epc: 38/200, val_loss:0.49710611147539957
+[2021-05-12 15:27:13,983] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 15:27:13,985] INFO    (base_engine-78): Epc: 39/200, val_loss:0.49710611147539957
+[2021-05-12 15:28:25,398] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 15:28:25,399] INFO    (base_engine-78): Epc: 40/200, val_loss:0.49710611147539957
+[2021-05-12 15:29:36,149] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 15:29:36,151] INFO    (base_engine-78): Epc: 41/200, val_loss:0.49710611147539957
+[2021-05-12 15:30:46,263] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 15:30:46,264] INFO    (base_engine-78): Epc: 42/200, val_loss:0.49710611147539957
+[2021-05-12 15:31:58,480] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 15:31:58,482] INFO    (base_engine-78): Epc: 43/200, val_loss:0.49710611147539957
+[2021-05-12 15:33:09,593] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 15:33:09,595] INFO    (base_engine-78): Epc: 44/200, val_loss:0.49710611147539957
+[2021-05-12 15:34:20,114] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 15:34:20,115] INFO    (base_engine-78): Epc: 45/200, val_loss:0.49710611147539957
+[2021-05-12 15:35:31,100] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 15:35:31,102] INFO    (base_engine-78): Epc: 46/200, val_loss:0.49710611147539957
+[2021-05-12 15:36:41,944] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 15:36:41,946] INFO    (base_engine-78): Epc: 47/200, val_loss:0.49710611147539957
+[2021-05-12 15:37:51,633] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 15:37:51,635] INFO    (base_engine-78): Epc: 48/200, val_loss:0.49710611147539957
+[2021-05-12 15:39:02,836] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 15:39:02,839] INFO    (base_engine-78): Epc: 49/200, val_loss:0.49710611147539957
+[2021-05-12 15:40:14,009] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 15:40:14,013] INFO    (base_engine-78): Epc: 50/200, val_loss:0.49710611147539957
+[2021-05-12 15:41:25,563] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 15:41:25,564] INFO    (base_engine-78): Epc: 51/200, val_loss:0.49710611147539957
+[2021-05-12 15:42:34,917] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 15:42:34,918] INFO    (base_engine-78): Epc: 52/200, val_loss:0.49710611147539957
+[2021-05-12 15:43:45,541] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 15:43:45,543] INFO    (base_engine-78): Epc: 53/200, val_loss:0.49710611147539957
+[2021-05-12 15:44:56,723] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 15:44:56,725] INFO    (base_engine-78): Epc: 54/200, val_loss:0.49710611147539957
+[2021-05-12 15:46:08,137] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 15:46:08,138] INFO    (base_engine-78): Epc: 55/200, val_loss:0.49710611147539957
+[2021-05-12 15:47:18,411] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 15:47:18,413] INFO    (base_engine-78): Epc: 56/200, val_loss:0.49710611147539957
+[2021-05-12 15:48:29,237] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 15:48:29,239] INFO    (base_engine-78): Epc: 57/200, val_loss:0.49710611147539957
+[2021-05-12 15:49:40,030] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 15:49:40,032] INFO    (base_engine-78): Epc: 58/200, val_loss:0.49710611147539957
+[2021-05-12 15:50:50,632] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 15:50:50,634] INFO    (base_engine-78): Epc: 59/200, val_loss:0.49710611147539957
+[2021-05-12 15:52:01,062] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 15:52:01,066] INFO    (base_engine-78): Epc: 60/200, val_loss:0.49710611147539957
+[2021-05-12 15:53:10,950] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 15:53:10,951] INFO    (base_engine-78): Epc: 61/200, val_loss:0.49710611147539957
+[2021-05-12 15:54:21,430] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 15:54:21,431] INFO    (base_engine-78): Epc: 62/200, val_loss:0.49710611147539957
+[2021-05-12 15:55:31,720] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 15:55:31,721] INFO    (base_engine-78): Epc: 63/200, val_loss:0.49710611147539957
+[2021-05-12 15:56:43,050] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 15:56:43,052] INFO    (base_engine-78): Epc: 64/200, val_loss:0.49710611147539957
+[2021-05-12 15:57:54,006] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 15:57:54,007] INFO    (base_engine-78): Epc: 65/200, val_loss:0.49710611147539957
+[2021-05-12 15:59:05,820] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 15:59:05,822] INFO    (base_engine-78): Epc: 66/200, val_loss:0.49710611147539957
+[2021-05-12 16:00:17,438] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 16:00:17,439] INFO    (base_engine-78): Epc: 67/200, val_loss:0.49710611147539957
+[2021-05-12 16:01:27,947] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 16:01:27,949] INFO    (base_engine-78): Epc: 68/200, val_loss:0.49710611147539957
+[2021-05-12 16:02:39,296] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 16:02:39,298] INFO    (base_engine-78): Epc: 69/200, val_loss:0.49710611147539957
+[2021-05-12 16:03:49,554] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 16:03:49,555] INFO    (base_engine-78): Epc: 70/200, val_loss:0.49710611147539957
+[2021-05-12 16:05:01,132] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 16:05:01,134] INFO    (base_engine-78): Epc: 71/200, val_loss:0.49710611147539957
+[2021-05-12 16:06:11,652] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 16:06:11,654] INFO    (base_engine-78): Epc: 72/200, val_loss:0.49710611147539957
+[2021-05-12 16:07:23,554] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 16:07:23,556] INFO    (base_engine-78): Epc: 73/200, val_loss:0.49710611147539957
+[2021-05-12 16:08:34,981] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 16:08:34,982] INFO    (base_engine-78): Epc: 74/200, val_loss:0.49710611147539957
+[2021-05-12 16:09:46,251] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 16:09:46,252] INFO    (base_engine-78): Epc: 75/200, val_loss:0.49710611147539957
+[2021-05-12 16:10:57,174] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 16:10:57,175] INFO    (base_engine-78): Epc: 76/200, val_loss:0.49710611147539957
+[2021-05-12 16:12:06,163] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 16:12:06,165] INFO    (base_engine-78): Epc: 77/200, val_loss:0.49710611147539957
+[2021-05-12 16:13:17,267] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 16:13:17,268] INFO    (base_engine-78): Epc: 78/200, val_loss:0.49710611147539957
+[2021-05-12 16:14:27,312] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 16:14:27,313] INFO    (base_engine-78): Epc: 79/200, val_loss:0.49710611147539957
+[2021-05-12 16:15:37,290] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 16:15:37,292] INFO    (base_engine-78): Epc: 80/200, val_loss:0.49710611147539957
+[2021-05-12 16:16:47,702] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 16:16:47,703] INFO    (base_engine-78): Epc: 81/200, val_loss:0.49710611147539957
+[2021-05-12 16:17:58,218] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 16:17:58,220] INFO    (base_engine-78): Epc: 82/200, val_loss:0.49710611147539957
+[2021-05-12 16:19:09,389] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 16:19:09,390] INFO    (base_engine-78): Epc: 83/200, val_loss:0.49710611147539957
+[2021-05-12 16:20:20,160] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 16:20:20,162] INFO    (base_engine-78): Epc: 84/200, val_loss:0.49710611147539957
+[2021-05-12 16:21:30,578] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 16:21:30,580] INFO    (base_engine-78): Epc: 85/200, val_loss:0.49710611147539957
+[2021-05-12 16:22:42,185] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 16:22:42,187] INFO    (base_engine-78): Epc: 86/200, val_loss:0.49710611147539957
+[2021-05-12 16:23:53,068] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 16:23:53,070] INFO    (base_engine-78): Epc: 87/200, val_loss:0.49710611147539957
+[2021-05-12 16:25:04,493] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 16:25:04,495] INFO    (base_engine-78): Epc: 88/200, val_loss:0.49710611147539957
+[2021-05-12 16:26:16,293] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 16:26:16,294] INFO    (base_engine-78): Epc: 89/200, val_loss:0.49710611147539957
+[2021-05-12 16:27:26,116] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 16:27:26,118] INFO    (base_engine-78): Epc: 90/200, val_loss:0.49710611147539957
+[2021-05-12 16:28:36,633] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 16:28:36,635] INFO    (base_engine-78): Epc: 91/200, val_loss:0.49710611147539957
+[2021-05-12 16:29:47,307] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 16:29:47,309] INFO    (base_engine-78): Epc: 92/200, val_loss:0.49710611147539957
+[2021-05-12 16:30:57,856] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 16:30:57,857] INFO    (base_engine-78): Epc: 93/200, val_loss:0.49710611147539957
+[2021-05-12 16:32:10,580] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 16:32:10,582] INFO    (base_engine-78): Epc: 94/200, val_loss:0.49710611147539957
+[2021-05-12 16:33:25,494] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 16:33:25,495] INFO    (base_engine-78): Epc: 95/200, val_loss:0.49710611147539957
+[2021-05-12 16:34:38,640] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 16:34:38,641] INFO    (base_engine-78): Epc: 96/200, val_loss:0.49710611147539957
+[2021-05-12 16:35:50,378] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 16:35:50,380] INFO    (base_engine-78): Epc: 97/200, val_loss:0.49710611147539957
+[2021-05-12 16:36:59,411] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 16:36:59,418] INFO    (base_engine-78): Epc: 98/200, val_loss:0.49710611147539957
+[2021-05-12 16:38:08,690] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 16:38:08,692] INFO    (base_engine-78): Epc: 99/200, val_loss:0.49710611147539957
+[2021-05-12 16:39:20,299] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 16:39:20,300] INFO    (base_engine-78): Epc: 100/200, val_loss:0.49710611147539957
+[2021-05-12 16:40:33,238] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 16:40:33,240] INFO    (base_engine-78): Epc: 101/200, val_loss:0.49710611147539957
+[2021-05-12 16:41:44,472] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 16:41:44,473] INFO    (base_engine-78): Epc: 102/200, val_loss:0.49710611147539957
+[2021-05-12 16:42:55,000] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 16:42:55,001] INFO    (base_engine-78): Epc: 103/200, val_loss:0.49710611147539957
+[2021-05-12 16:44:05,814] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 16:44:05,815] INFO    (base_engine-78): Epc: 104/200, val_loss:0.49710611147539957
+[2021-05-12 16:45:16,338] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 16:45:16,340] INFO    (base_engine-78): Epc: 105/200, val_loss:0.49710611147539957
+[2021-05-12 16:46:27,189] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 16:46:27,191] INFO    (base_engine-78): Epc: 106/200, val_loss:0.49710611147539957
+[2021-05-12 16:47:39,098] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 16:47:39,100] INFO    (base_engine-78): Epc: 107/200, val_loss:0.49710611147539957
+[2021-05-12 16:48:50,686] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 16:48:50,687] INFO    (base_engine-78): Epc: 108/200, val_loss:0.49710611147539957
+[2021-05-12 16:50:01,098] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 16:50:01,099] INFO    (base_engine-78): Epc: 109/200, val_loss:0.49710611147539957
+[2021-05-12 16:51:11,805] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 16:51:11,806] INFO    (base_engine-78): Epc: 110/200, val_loss:0.49710611147539957
+[2021-05-12 16:52:21,628] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 16:52:21,629] INFO    (base_engine-78): Epc: 111/200, val_loss:0.49710611147539957
+[2021-05-12 16:53:33,068] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 16:53:33,069] INFO    (base_engine-78): Epc: 112/200, val_loss:0.49710611147539957
+[2021-05-12 16:54:45,391] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 16:54:45,393] INFO    (base_engine-78): Epc: 113/200, val_loss:0.49710611147539957
+[2021-05-12 16:55:57,697] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 16:55:57,698] INFO    (base_engine-78): Epc: 114/200, val_loss:0.49710611147539957
+[2021-05-12 16:57:09,330] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 16:57:09,332] INFO    (base_engine-78): Epc: 115/200, val_loss:0.49710611147539957
+[2021-05-12 16:58:21,489] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 16:58:21,491] INFO    (base_engine-78): Epc: 116/200, val_loss:0.49710611147539957
+[2021-05-12 16:59:33,065] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 16:59:33,066] INFO    (base_engine-78): Epc: 117/200, val_loss:0.49710611147539957
+[2021-05-12 17:00:44,215] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 17:00:44,217] INFO    (base_engine-78): Epc: 118/200, val_loss:0.49710611147539957
+[2021-05-12 17:01:56,002] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 17:01:56,007] INFO    (base_engine-78): Epc: 119/200, val_loss:0.49710611147539957
+[2021-05-12 17:03:12,097] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 17:03:12,108] INFO    (base_engine-78): Epc: 120/200, val_loss:0.49710611147539957
+[2021-05-12 17:04:21,234] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 17:04:21,245] INFO    (base_engine-78): Epc: 121/200, val_loss:0.49710611147539957
+[2021-05-12 17:05:31,770] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 17:05:31,776] INFO    (base_engine-78): Epc: 122/200, val_loss:0.49710611147539957
+[2021-05-12 17:06:41,406] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 17:06:41,411] INFO    (base_engine-78): Epc: 123/200, val_loss:0.49710611147539957
+[2021-05-12 17:07:52,586] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 17:07:52,587] INFO    (base_engine-78): Epc: 124/200, val_loss:0.49710611147539957
+[2021-05-12 17:09:04,237] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 17:09:04,243] INFO    (base_engine-78): Epc: 125/200, val_loss:0.49710611147539957
+[2021-05-12 17:10:16,352] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 17:10:16,353] INFO    (base_engine-78): Epc: 126/200, val_loss:0.49710611147539957
+[2021-05-12 17:11:27,852] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 17:11:27,858] INFO    (base_engine-78): Epc: 127/200, val_loss:0.49710611147539957
+[2021-05-12 17:12:39,440] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 17:12:39,441] INFO    (base_engine-78): Epc: 128/200, val_loss:0.49710611147539957
+[2021-05-12 17:13:49,537] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 17:13:49,539] INFO    (base_engine-78): Epc: 129/200, val_loss:0.49710611147539957
+[2021-05-12 17:15:01,028] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 17:15:01,030] INFO    (base_engine-78): Epc: 130/200, val_loss:0.49710611147539957
+[2021-05-12 17:16:11,328] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 17:16:11,347] INFO    (base_engine-78): Epc: 131/200, val_loss:0.49710611147539957
+[2021-05-12 17:17:38,307] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 17:17:38,308] INFO    (base_engine-78): Epc: 132/200, val_loss:0.49710611147539957
+[2021-05-12 17:18:49,161] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 17:18:49,162] INFO    (base_engine-78): Epc: 133/200, val_loss:0.49710611147539957
+[2021-05-12 17:20:00,153] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 17:20:00,154] INFO    (base_engine-78): Epc: 134/200, val_loss:0.49710611147539957
+[2021-05-12 17:21:11,287] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 17:21:11,290] INFO    (base_engine-78): Epc: 135/200, val_loss:0.49710611147539957
+[2021-05-12 17:22:21,866] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 17:22:21,867] INFO    (base_engine-78): Epc: 136/200, val_loss:0.49710611147539957
+[2021-05-12 17:23:34,340] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 17:23:34,341] INFO    (base_engine-78): Epc: 137/200, val_loss:0.49710611147539957
+[2021-05-12 17:24:44,828] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 17:24:44,830] INFO    (base_engine-78): Epc: 138/200, val_loss:0.49710611147539957
+[2021-05-12 17:25:56,080] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 17:25:56,082] INFO    (base_engine-78): Epc: 139/200, val_loss:0.49710611147539957
+[2021-05-12 17:27:07,633] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 17:27:07,634] INFO    (base_engine-78): Epc: 140/200, val_loss:0.49710611147539957
+[2021-05-12 17:28:16,382] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 17:28:16,386] INFO    (base_engine-78): Epc: 141/200, val_loss:0.49710611147539957
+[2021-05-12 17:29:26,829] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 17:29:26,831] INFO    (base_engine-78): Epc: 142/200, val_loss:0.49710611147539957
+[2021-05-12 17:30:38,605] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 17:30:38,606] INFO    (base_engine-78): Epc: 143/200, val_loss:0.49710611147539957
+[2021-05-12 17:31:50,780] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 17:31:50,782] INFO    (base_engine-78): Epc: 144/200, val_loss:0.49710611147539957
+[2021-05-12 17:33:02,167] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 17:33:02,169] INFO    (base_engine-78): Epc: 145/200, val_loss:0.49710611147539957
+[2021-05-12 17:34:12,285] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 17:34:12,287] INFO    (base_engine-78): Epc: 146/200, val_loss:0.49710611147539957
+[2021-05-12 17:35:23,401] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 17:35:23,403] INFO    (base_engine-78): Epc: 147/200, val_loss:0.49710611147539957
+[2021-05-12 17:36:35,909] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 17:36:35,910] INFO    (base_engine-78): Epc: 148/200, val_loss:0.49710611147539957
+[2021-05-12 17:37:47,731] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 17:37:47,733] INFO    (base_engine-78): Epc: 149/200, val_loss:0.49710611147539957
+[2021-05-12 17:38:59,154] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 17:38:59,159] INFO    (base_engine-78): Epc: 150/200, val_loss:0.49710611147539957
+[2021-05-12 17:40:10,392] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 17:40:10,394] INFO    (base_engine-78): Epc: 151/200, val_loss:0.49710611147539957
+[2021-05-12 17:41:22,491] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 17:41:22,493] INFO    (base_engine-78): Epc: 152/200, val_loss:0.49710611147539957
+[2021-05-12 17:42:33,955] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 17:42:33,957] INFO    (base_engine-78): Epc: 153/200, val_loss:0.49710611147539957
+[2021-05-12 17:43:45,682] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 17:43:45,686] INFO    (base_engine-78): Epc: 154/200, val_loss:0.49710611147539957
+[2021-05-12 17:44:57,924] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 17:44:57,926] INFO    (base_engine-78): Epc: 155/200, val_loss:0.49710611147539957
+[2021-05-12 17:46:09,038] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 17:46:09,040] INFO    (base_engine-78): Epc: 156/200, val_loss:0.49710611147539957
+[2021-05-12 17:47:20,472] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 17:47:20,474] INFO    (base_engine-78): Epc: 157/200, val_loss:0.49710611147539957
+[2021-05-12 17:48:32,516] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 17:48:32,517] INFO    (base_engine-78): Epc: 158/200, val_loss:0.49710611147539957
+[2021-05-12 17:49:42,372] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 17:49:42,374] INFO    (base_engine-78): Epc: 159/200, val_loss:0.49710611147539957
+[2021-05-12 17:50:53,623] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 17:50:53,624] INFO    (base_engine-78): Epc: 160/200, val_loss:0.49710611147539957
+[2021-05-12 17:52:04,917] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 17:52:04,919] INFO    (base_engine-78): Epc: 161/200, val_loss:0.49710611147539957
+[2021-05-12 17:53:17,296] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 17:53:17,297] INFO    (base_engine-78): Epc: 162/200, val_loss:0.49710611147539957
+[2021-05-12 17:54:29,275] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 17:54:29,277] INFO    (base_engine-78): Epc: 163/200, val_loss:0.49710611147539957
+[2021-05-12 17:55:38,918] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 17:55:38,920] INFO    (base_engine-78): Epc: 164/200, val_loss:0.49710611147539957
+[2021-05-12 17:56:49,586] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 17:56:49,588] INFO    (base_engine-78): Epc: 165/200, val_loss:0.49710611147539957
+[2021-05-12 17:58:00,227] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 17:58:00,229] INFO    (base_engine-78): Epc: 166/200, val_loss:0.49710611147539957
+[2021-05-12 17:59:11,659] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 17:59:11,661] INFO    (base_engine-78): Epc: 167/200, val_loss:0.49710611147539957
+[2021-05-12 18:00:24,331] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 18:00:24,333] INFO    (base_engine-78): Epc: 168/200, val_loss:0.49710611147539957
+[2021-05-12 18:01:36,129] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 18:01:36,130] INFO    (base_engine-78): Epc: 169/200, val_loss:0.49710611147539957
+[2021-05-12 18:02:46,262] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 18:02:46,263] INFO    (base_engine-78): Epc: 170/200, val_loss:0.49710611147539957
+[2021-05-12 18:03:56,829] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 18:03:56,831] INFO    (base_engine-78): Epc: 171/200, val_loss:0.49710611147539957
+[2021-05-12 18:05:08,451] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 18:05:08,453] INFO    (base_engine-78): Epc: 172/200, val_loss:0.49710611147539957
+[2021-05-12 18:06:19,249] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 18:06:19,250] INFO    (base_engine-78): Epc: 173/200, val_loss:0.49710611147539957
+[2021-05-12 18:07:30,245] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 18:07:30,249] INFO    (base_engine-78): Epc: 174/200, val_loss:0.49710611147539957
+[2021-05-12 18:08:41,488] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 18:08:41,490] INFO    (base_engine-78): Epc: 175/200, val_loss:0.49710611147539957
+[2021-05-12 18:09:50,381] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 18:09:50,383] INFO    (base_engine-78): Epc: 176/200, val_loss:0.49710611147539957
+[2021-05-12 18:11:01,695] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 18:11:01,696] INFO    (base_engine-78): Epc: 177/200, val_loss:0.49710611147539957
+[2021-05-12 18:12:13,551] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 18:12:13,552] INFO    (base_engine-78): Epc: 178/200, val_loss:0.49710611147539957
+[2021-05-12 18:13:25,207] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 18:13:25,209] INFO    (base_engine-78): Epc: 179/200, val_loss:0.49710611147539957
+[2021-05-12 18:14:37,057] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 18:14:37,058] INFO    (base_engine-78): Epc: 180/200, val_loss:0.49710611147539957
+[2021-05-12 18:15:50,100] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 18:15:50,102] INFO    (base_engine-78): Epc: 181/200, val_loss:0.49710611147539957
+[2021-05-12 18:17:00,953] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 18:17:00,955] INFO    (base_engine-78): Epc: 182/200, val_loss:0.49710611147539957
+[2021-05-12 18:18:11,185] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 18:18:11,186] INFO    (base_engine-78): Epc: 183/200, val_loss:0.49710611147539957
+[2021-05-12 18:19:22,653] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 18:19:22,654] INFO    (base_engine-78): Epc: 184/200, val_loss:0.49710611147539957
+[2021-05-12 18:20:34,358] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 18:20:34,360] INFO    (base_engine-78): Epc: 185/200, val_loss:0.49710611147539957
+[2021-05-12 18:21:45,222] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 18:21:45,223] INFO    (base_engine-78): Epc: 186/200, val_loss:0.49710611147539957
+[2021-05-12 18:22:57,060] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 18:22:57,061] INFO    (base_engine-78): Epc: 187/200, val_loss:0.49710611147539957
+[2021-05-12 18:24:07,106] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 18:24:07,108] INFO    (base_engine-78): Epc: 188/200, val_loss:0.49710611147539957
+[2021-05-12 18:25:19,602] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 18:25:19,604] INFO    (base_engine-78): Epc: 189/200, val_loss:0.49710611147539957
+[2021-05-12 18:26:29,558] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 18:26:29,559] INFO    (base_engine-78): Epc: 190/200, val_loss:0.49710611147539957
+[2021-05-12 18:27:40,965] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 18:27:40,967] INFO    (base_engine-78): Epc: 191/200, val_loss:0.49710611147539957
+[2021-05-12 18:28:52,620] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 18:28:52,622] INFO    (base_engine-78): Epc: 192/200, val_loss:0.49710611147539957
+[2021-05-12 18:30:03,980] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 18:30:03,981] INFO    (base_engine-78): Epc: 193/200, val_loss:0.49710611147539957
+[2021-05-12 18:31:15,053] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 18:31:15,054] INFO    (base_engine-78): Epc: 194/200, val_loss:0.49710611147539957
+[2021-05-12 18:32:25,439] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 18:32:25,440] INFO    (base_engine-78): Epc: 195/200, val_loss:0.49710611147539957
+[2021-05-12 18:33:34,767] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 18:33:34,769] INFO    (base_engine-78): Epc: 196/200, val_loss:0.49710611147539957
+[2021-05-12 18:34:43,991] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 18:34:43,992] INFO    (base_engine-78): Epc: 197/200, val_loss:0.49710611147539957
+[2021-05-12 18:35:55,383] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 18:35:55,385] INFO    (base_engine-78): Epc: 198/200, val_loss:0.49710611147539957
+[2021-05-12 18:37:06,007] INFO    (base_engine-102): current lr_rate is [1e-05]
+[2021-05-12 18:37:06,009] INFO    (base_engine-78): Epc: 199/200, val_loss:0.49710611147539957
+[2021-05-12 18:38:18,602] INFO    (base_engine-102): current lr_rate is [1e-05]
