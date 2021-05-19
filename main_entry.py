@@ -2,7 +2,7 @@ from Tools import env_init
 from Tools.logger import *
 import argparse
 from Experiments.Config.issue01 import *
-from Dataset import StateFarm
+from Dataset import StateFarm, StateFarm_Test
 from torch.utils.data import DataLoader
 from torchvision import transforms as T
 import skimage.io as io
@@ -22,7 +22,7 @@ def parse_args():
 
 # initialization
 parser = parse_args()
-args = EXP3(parser.mode, parser.logfile)
+args = EXP1(parser.mode, parser.logfile)
 warning("STARTING >>>>>> {} ".format(args.name))
 args.logpath = os.path.join(args.log_root, args.name, args.logfile)
 ngpu, device, writer = env_init(args, logging.INFO)
@@ -66,7 +66,7 @@ train_loader = DataLoader(  train_dataset, batch_size=args.batch, shuffle=True, 
                             drop_last=False, num_workers=args.num_workers, pin_memory=args.pin_memory)
 eval_loader = DataLoader(   eval_dataset, batch_size=args.batch, shuffle=False, \
                             drop_last=False, num_workers=args.num_workers, pin_memory=args.pin_memory)
-
+test_loader = DataLoader()
                 
 # model
 if args.method == 'DA':
@@ -91,13 +91,19 @@ elif args.method == 'Siamese':
     }
 metric = Accu()
 # engine
-engine = Siamese_Engine(train_loader, eval_loader, None, args, writer, device)
+# engine = Siamese_Engine(train_loader, eval_loader, None, args, writer, device)
+engine = DA_Engine(train_loader, eval_loader, None, args, writer, device)
 
 # random seed
 if __name__ == '__main__':
-    if args.mode in ['train', 'debug']:
+    if args.mode in ['train']:
         info("Margin = {}".format(args.margin))
         engine.train(model, optimizer, criterion, metric)
         
-    else:
-        raise NotImplementedError
+    elif args.mode in ['valid']:
+        valid_loss, valid_accu = engine.valid(model, optimizer, criterion, metric)
+        info(f"loss={valid_loss}, accu={valid_accu}")
+
+    elif args.mode in ['submit', 'debug']:
+        sub_file = './submission_{}.txt'.format(args.name)
+        engine.submission(model, optimizer, submission_path=sub_file)

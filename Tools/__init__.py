@@ -19,7 +19,8 @@ def env_init(args, loglevel=logging.INFO):
 
     device_ = 'cpu'
     if torch.cuda.is_available():
-        gpu = auto_select_gpu(utility_bound=0, num_gpu=torch.cuda.device_count())
+        # gpu = auto_select_gpu(utility_bound=0, num_gpu=torch.cuda.device_count())
+        gpu = [1]
         device_ = 'cuda'
         info("DEVICE: {}, found {} gpus: {}".format(device_, len(gpu), gpu))
     else:

@@ -1,2 +1,9 @@
 [2021-05-11 00:21:10,930] INFO    (__init__-24): DEVICE: cuda, found 1 gpus: ['0']
 [2021-05-11 00:21:10,985] INFO    (main_entry-53): 18943 samples for training --- 3481 samples for validation
+[2021-05-19 18:36:43,576] INFO    (__init__-25): DEVICE: cuda, found 1 gpus: [1]
+[2021-05-19 18:36:49,597] INFO    (main_entry-53): 18943 samples for training --- 3481 samples for validation
+[2021-05-19 18:37:07,173] INFO    (engine-51): Test resume from 15 epoch
+[2021-05-19 18:41:12,724] INFO    (__init__-25): DEVICE: cuda, found 1 gpus: [1]
+[2021-05-19 18:41:14,735] INFO    (main_entry-53): 18943 samples for training --- 3481 samples for validation
+[2021-05-19 18:41:19,450] INFO    (engine-51): Test resume from 15 epoch
+[2021-05-19 18:47:04,803] INFO    (main_entry-105): loss=0.4867493992825167, accu=0.8520540595054626

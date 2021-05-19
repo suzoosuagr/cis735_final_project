@@ -34,10 +34,12 @@ def leave_subject_out_instruction(ins_train, ins_val, val_subjects, img_root='..
 ins_train_file = './Dataset/instruction/statefarm_train.txt'
 ins_val_file = './Dataset/instruction/statefarm_val.txt'
 leave_subject_out_instruction(ins_train_file, ins_val_file, val_subjects)
-    
 
-
-
-
-
+# %%
+from Tools.utils import get_files
+files = get_files('../data/statefarm/imgs/test/', extension_filter='.jpg')
+ins_test_file = './Dataset/instruction/statefarm_test.txt'
+with open(ins_test_file, 'w') as f:
+    for msg in files:
+        f.write(msg+'\n')
 # %%

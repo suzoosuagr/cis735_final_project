@@ -239,6 +239,7 @@
 [2021-05-11 21:41:28,681] INFO    (base_engine-77): Epc: 18/200, val_loss:0.4825218975810068
 [2021-05-11 21:42:39,922] INFO    (base_engine-101): current lr_rate is [0.001]
 [2021-05-11 21:42:39,924] INFO    (base_engine-77): Epc: 19/200, val_loss:0.4825218975810068
+
 [2021-05-11 21:43:52,403] INFO    (base_engine-101): current lr_rate is [0.001]
 [2021-05-11 21:43:52,407] INFO    (base_engine-77): Epc: 20/200, val_loss:0.4825218975810068
 [2021-05-11 21:45:04,341] INFO    (base_engine-101): current lr_rate is [0.001]

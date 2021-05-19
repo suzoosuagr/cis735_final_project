@@ -29,7 +29,6 @@ class DANN_resnet34(nn.Module):
         class_output = self.classifier(feat_0)
         return class_output
 
-
 class RevSiamese_resnet34(nn.Module):
     def __init__(self, nclass, pretrained) -> None:
         super(RevSiamese_resnet34, self).__init__()

@@ -46,6 +46,31 @@ class DA_Engine(BaseEngine):
             self.metric(cls_output, cls_label)
         return epoch_loss / len(self.eval_loader), self.metric.value()
 
+    def valid(self, model, optimizer, criterion, metric):
+        self.model, _, start_epoch, self.min_loss = self.load_ckpt(model, optimizer)
+        info("Test resume from {} epoch".format(start_epoch))
+        self.model.eval()
+        epoch_loss = 0
+        for i, data in enumerate(self.eval_loader):
+            img_0, img_1, cls_label, sia_label = data
+            img_0 = img_0.to(self.device)
+            cls_label = cls_label.to(self.device)
+            with torch.no_grad():
+                cls_output = self.model(img_0, None, None)
+            loss = criterion(cls_output, cls_label)
+            epoch_loss += loss.item()
+            metric(cls_output, cls_label)
+        return epoch_loss / len(self.eval_loader), metric.value()
+
+    def submission(self, model, optimizer, submission_path):
+        self.model, _, start_epoch, self.min_loss = self.load_ckpt(model, optimizer)
+        info("Test resume from {} epoch".format(start_epoch))
+        sub_writer = open(submission_path, 'w') 
+        sub_writer.write("img,c0,c1,c2,c3,c4,c5,c6,c7,c8,c9\n")
+
+
+
+
 class Siamese_Engine(BaseEngine):
     def __init__(self, train_loader, eval_loader, test_loader, args, writer, device) -> None:
         super(Siamese_Engine, self).__init__(train_loader, eval_loader, test_loader, args, writer, device)
