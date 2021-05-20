@@ -24,9 +24,9 @@ please go to https://www.kaggle.com/c/state-farm-distracted-driver-detection and
 ```
 ..
 |── data
-│   └── statefarm
+│   └── statefarm             # The StateFarm Dataset
 │       └── imgs
-│           ├── test
+│           ├── test          
 │           └── train
 │               ├── c0
 │               ├── c1
@@ -41,23 +41,23 @@ please go to https://www.kaggle.com/c/state-farm-distracted-driver-detection and
 |
 |
 └── cis735_final_project(*)   # current dir
-    ├── Dataset
+    ├── Dataset               # Defines dataset
     │   ├── instruction
     │   └── __pycache__
-    ├── Docker
-    ├── Experiments
-    │   └── Config
+    ├── Docker                # Dockerfile
+    ├── Experiments           
+    │   └── Config            # Config files
     │       └── __pycache__
-    ├── Log
-    │   ├── ISSUE01_EXP1
+    ├── Log                   
+    │   ├── ISSUE01_EXP1      # << Logs our method
     │   ├── ISSUE01_EXP2
     │   └── ISSUE01_EXP3
-    ├── Model
+    ├── Model             
     │   └── __pycache__
     ├── __pycache__
     ├── Recipes
     ├── temp
-    ├── TFrecords
+    ├── TFrecords            # Tensorboard Records
     │   ├── ISSUE01_EXP1
     │   │   └── 2021_05_11_21_18_31
     │   ├── ISSUE01_EXP2
@@ -67,14 +67,12 @@ please go to https://www.kaggle.com/c/state-farm-distracted-driver-detection and
     └── Tools
         └── __pycache__
 ```
-</div></details>
-
 
 ## Python packages:
 - please see : [requirements.txt](./Docker/requirements.txt)
 
 
-## run the model
+## run our model
 
 1. Train:
     ```
@@ -90,3 +88,11 @@ please go to https://www.kaggle.com/c/state-farm-distracted-driver-detection and
    ```
    python main_entry.py -m submit -l submit.log
    ```
+
+## run baseline
+Please check our baseline model repository at : https://github.com/wowowoxuan/statefarm_task
+1. Train
+    change the \<MODEL\> to run different experiments
+    ```
+    python train<MODEL>.py
+    ```
