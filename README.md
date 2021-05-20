@@ -91,8 +91,13 @@ please go to https://www.kaggle.com/c/state-farm-distracted-driver-detection and
 
 ## run baseline
 Please check our baseline model repository at : https://github.com/wowowoxuan/statefarm_task
-1. Train
+1. Train 
     change the \<MODEL\> to run different experiments
     ```
     python train<MODEL>.py
     ```
+2. Test
+   change the \<MODEL\> to run different experiments
+   ```
+   python test<MODEL>.py
+   ```
