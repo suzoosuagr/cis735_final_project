@@ -63,10 +63,26 @@ class DA_Engine(BaseEngine):
         return epoch_loss / len(self.eval_loader), metric.value()
 
     def submission(self, model, optimizer, submission_path):
+        rounder = lambda x: round(x, 4)
         self.model, _, start_epoch, self.min_loss = self.load_ckpt(model, optimizer)
         info("Test resume from {} epoch".format(start_epoch))
+        self.model.eval()
         sub_writer = open(submission_path, 'w') 
         sub_writer.write("img,c0,c1,c2,c3,c4,c5,c6,c7,c8,c9\n")
+        for i, data in enumerate(self.test_loader):
+            img_0, img_pathes = data
+            img_0 = img_0.to(self.device)
+            with torch.no_grad():
+                cls_output = self.model(img_0, None, None)
+            cls_preds = torch.softmax(cls_output, dim=1)
+            for i in range(len(cls_output)):
+                msg = os.path.basename(img_pathes[i])+','
+                msg += ','.join([str(rounder(p)) for p in cls_preds[i].cpu().numpy().tolist()])+'\n'
+                sub_writer.write(msg)
+        sub_writer.close()
+        warning("Generated submission file at {}".format(submission_path))
+
+
 
 
 

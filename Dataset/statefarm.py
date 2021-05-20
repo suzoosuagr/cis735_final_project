@@ -59,14 +59,26 @@ class StateFarm(Dataset):
         return self.length
 
         
-class StateFarm_Test(StateFarm):
+class StateFarm_Test(Dataset):
     def __init__(self, ins_file, transform):
-        super(StateFarm_Test, self).__init__(ins_file, transform=transform)
+        assert os.path.exists(ins_file)
+        self.datalist = self.read_ins(ins_file)
+        self.transform = transform
 
     def __getitem__(self, index: int):
         img_path = self.datalist[index]
         img_0 = pil_loader(img_path)
         if self.transform:
             img_0  = self.transform(img_0)
-        return img_0
+        return img_0, img_path
     
+    @staticmethod
+    def read_ins(ins_file):
+        with open(ins_file, 'r') as f:
+            lines = f.readlines()
+            lines = [l.rstrip() for l in lines]
+        return lines
+    
+    
+    def __len__(self):
+        return len(self.datalist)

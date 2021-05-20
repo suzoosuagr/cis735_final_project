@@ -7,3 +7,32 @@
 [2021-05-19 18:41:14,735] INFO    (main_entry-53): 18943 samples for training --- 3481 samples for validation
 [2021-05-19 18:41:19,450] INFO    (engine-51): Test resume from 15 epoch
 [2021-05-19 18:47:04,803] INFO    (main_entry-105): loss=0.4867493992825167, accu=0.8520540595054626
+[2021-05-19 19:59:39,784] INFO    (__init__-25): DEVICE: cuda, found 1 gpus: [1]
+[2021-05-19 20:03:18,327] INFO    (__init__-25): DEVICE: cuda, found 1 gpus: [1]
+[2021-05-19 20:03:21,245] INFO    (main_entry-54): 18943 samples for training --- 3481 samples for validation
+[2021-05-19 20:03:23,242] INFO    (engine-67): Test resume from 15 epoch
+[2021-05-19 20:03:48,691] INFO    (__init__-25): DEVICE: cuda, found 1 gpus: [1]
+[2021-05-19 20:03:52,121] INFO    (main_entry-54): 18943 samples for training --- 3481 samples for validation
+[2021-05-19 20:03:54,109] INFO    (engine-67): Test resume from 15 epoch
+[2021-05-19 20:04:37,233] INFO    (__init__-25): DEVICE: cuda, found 1 gpus: [1]
+[2021-05-19 20:04:37,293] INFO    (main_entry-54): 18943 samples for training --- 3481 samples for validation
+[2021-05-19 20:04:39,334] INFO    (engine-67): Test resume from 15 epoch
+[2021-05-19 20:05:21,735] INFO    (__init__-25): DEVICE: cuda, found 1 gpus: [1]
+[2021-05-19 20:05:21,797] INFO    (main_entry-54): 18943 samples for training --- 3481 samples for validation
+[2021-05-19 20:05:23,863] INFO    (engine-67): Test resume from 15 epoch
+[2021-05-19 20:07:14,359] INFO    (__init__-25): DEVICE: cuda, found 1 gpus: [1]
+[2021-05-19 20:07:14,421] INFO    (main_entry-54): 18943 samples for training --- 3481 samples for validation
+[2021-05-19 20:07:16,447] INFO    (engine-67): Test resume from 15 epoch
+[2021-05-19 20:07:56,499] INFO    (__init__-25): DEVICE: cuda, found 1 gpus: [1]
+[2021-05-19 20:07:56,560] INFO    (main_entry-54): 18943 samples for training --- 3481 samples for validation
+[2021-05-19 20:07:58,547] INFO    (engine-67): Test resume from 15 epoch
+[2021-05-19 20:09:28,350] INFO    (__init__-25): DEVICE: cuda, found 1 gpus: [1]
+[2021-05-19 20:09:28,411] INFO    (main_entry-54): 18943 samples for training --- 3481 samples for validation
+[2021-05-19 20:09:30,423] INFO    (engine-67): Test resume from 15 epoch
+[2021-05-19 20:12:07,911] INFO    (__init__-25): DEVICE: cuda, found 1 gpus: [1]
+[2021-05-19 20:12:07,971] INFO    (main_entry-54): 18943 samples for training --- 3481 samples for validation
+[2021-05-19 20:12:09,962] INFO    (engine-68): Test resume from 15 epoch
+[2021-05-19 20:18:35,971] INFO    (__init__-25): DEVICE: cuda, found 1 gpus: [1]
+[2021-05-19 20:18:36,032] INFO    (main_entry-54): 18943 samples for training --- 3481 samples for validation
+[2021-05-19 20:18:38,034] INFO    (engine-68): Test resume from 15 epoch
+[2021-05-19 20:26:35,528] WARNING (engine-83): Generated submission file at ./submission_ISSUE01_EXP1.csv

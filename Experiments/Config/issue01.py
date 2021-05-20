@@ -20,6 +20,7 @@ class EXP1(Basic_Config):
         self.ckpt_root = '../model_weights/cis_735_final/'
         self.ins_train_file = './Dataset/instruction/statefarm_train.txt'
         self.ins_val_file = './Dataset/instruction/statefarm_val.txt' 
+        self.ins_test_file = './Dataset/instruction/statefarm_test.txt' 
         self.img_size = 224
 
         self.summary = True

@@ -17,12 +17,13 @@ def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument("-m", "--mode", dest="mode", default="debug", type=str)
     parser.add_argument("-l", "--log", dest="logfile", default='debug.log', type=str)
+    parser.add_argument('-e',  "--exp", dest="expid", default='EXP1', choices=['EXP1', 'EXP2'])
     
     return parser.parse_args()
 
 # initialization
 parser = parse_args()
-args = EXP1(parser.mode, parser.logfile)
+args = eval(parser.expid)(parser.mode, parser.logfile)
 warning("STARTING >>>>>> {} ".format(args.name))
 args.logpath = os.path.join(args.log_root, args.name, args.logfile)
 ngpu, device, writer = env_init(args, logging.INFO)
@@ -50,15 +51,15 @@ val_trans = T.Compose(
 )
 train_dataset = StateFarm(args.ins_train_file, train_trans)
 eval_dataset = StateFarm(args.ins_val_file, val_trans)
+test_dataset = StateFarm_Test(args.ins_test_file, val_trans)
 info("{} samples for training --- {} samples for validation".format(len(train_dataset), len(eval_dataset)))
 # img, label = train_dataset[0]
 # io.imsave('./temp/dataset_visual.png', img.permute(1, 2, 0))
 
-
 if args.mode == 'debug':
     args.pin_memory=False
     args.num_workers=0
-    args.batch = 8
+    args.batch = 128
     args.resume = False
     args.summary = False
 
@@ -66,7 +67,8 @@ train_loader = DataLoader(  train_dataset, batch_size=args.batch, shuffle=True, 
                             drop_last=False, num_workers=args.num_workers, pin_memory=args.pin_memory)
 eval_loader = DataLoader(   eval_dataset, batch_size=args.batch, shuffle=False, \
                             drop_last=False, num_workers=args.num_workers, pin_memory=args.pin_memory)
-test_loader = DataLoader()
+test_loader = DataLoader(   test_dataset, batch_size=args.batch, shuffle=False, \
+                            drop_last=False, num_workers=args.num_workers, pin_memory=args.pin_memory)
                 
 # model
 if args.method == 'DA':
@@ -92,7 +94,7 @@ elif args.method == 'Siamese':
 metric = Accu()
 # engine
 # engine = Siamese_Engine(train_loader, eval_loader, None, args, writer, device)
-engine = DA_Engine(train_loader, eval_loader, None, args, writer, device)
+engine = DA_Engine(train_loader, eval_loader, test_loader, args, writer, device)
 
 # random seed
 if __name__ == '__main__':
@@ -104,6 +106,6 @@ if __name__ == '__main__':
         valid_loss, valid_accu = engine.valid(model, optimizer, criterion, metric)
         info(f"loss={valid_loss}, accu={valid_accu}")
 
-    elif args.mode in ['submit', 'debug']:
-        sub_file = './submission_{}.txt'.format(args.name)
+    elif args.mode in ['submit']:
+        sub_file = './submission_{}.csv'.format(args.name)
         engine.submission(model, optimizer, submission_path=sub_file)
